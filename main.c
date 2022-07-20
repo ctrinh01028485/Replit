@@ -50,15 +50,15 @@ double test_strtod(const char* s, const char **endptr) {
 
 int main()
 {
-	// char s[] = "ff123.54a2.78cc33fff";
-	// char *ptr;
-	// // ptr += 5;
-	// // char **p = &ptr;
-	// double a = test_strtod(s, &ptr);
-	// printf("a = %lf\n", a);
-	// printf("ptr = %s\n", ptr);
-	// double b = test_strtod(ptr, NULL);
-	// printf("b = %lf\n", b);
-	// printf("ptr = %s\n", ptr);
- //    return 0;
+	char s[] = "ff123.54a2.78cc33fff";
+	char *ptr;
+	// ptr += 5;
+	// char **p = &ptr;
+	double a = test_strtod(s, &ptr);
+	printf("a = %lf\n", a);
+	printf("ptr = %s\n", ptr);
+	double b = test_strtod(ptr, NULL);
+	printf("b = %lf\n", b);
+	printf("ptr = %s\n", ptr);
+    return 0;
 }
